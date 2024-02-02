@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@chainlink/contracts": "^0.6.1",
+    "@openzeppelin/contracts": "^4.9.0",
+    "Counters.sol": "link:@openzeppelin/contracts/utils/Counters.sol"
+  }
+}
