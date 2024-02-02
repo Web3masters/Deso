@@ -1,0 +1,2 @@
+faker==18.10.1
+scikit-learn==1.2.2
