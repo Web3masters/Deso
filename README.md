@@ -112,6 +112,14 @@ Join us on Flipper and be part of the social media revolution!
 ├── ai
 ```
 
+## Deployed Smart Contracts on fuji
+
+PostFactory contract address:    0x02ed3576A9570e865A8efa23c4eb39e2A71E1bDF
+https://testnet.snowtrace.io/address/0x02ed3576A9570e865A8efa23c4eb39e2A71E1bDF
+
+Donation contract address:    0x2F533eB919E4B9013AacF11B9853F24484965dE1
+https://testnet.snowtrace.io/address/0x2F533eB919E4B9013AacF11B9853F24484965dE1
+
 ## Running application
 
 To run the application there are some dependencies that need to be installed due to the technologies used, they are:
