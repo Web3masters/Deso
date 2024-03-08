@@ -122,6 +122,14 @@ https://testnet.snowtrace.io/address/0x02ed3576A9570e865A8efa23c4eb39e2A71E1bDF
 Donation contract address:    0x2F533eB919E4B9013AacF11B9853F24484965dE1
 https://testnet.snowtrace.io/address/0x2F533eB919E4B9013AacF11B9853F24484965dE1
 
+## Deployed Smart Contracts on BSC Testnet
+
+PostFactory contract address:    0x21B0d2513193C75F437D73A2f5683ff4dAA25Ed1
+https://testnet.bscscan.com/address/0x21B0d2513193C75F437D73A2f5683ff4dAA25Ed1
+
+Donation contract address:    0xa0d4108f905E12Fdb2f72Ea223c7F4c1CC832771
+https://testnet.bscscan.com/address/0xa0d4108f905E12Fdb2f72Ea223c7F4c1CC832771
+
 ## Running application
 
 To run the application there are some dependencies that need to be installed due to the technologies used, they are:
