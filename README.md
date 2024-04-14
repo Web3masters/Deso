@@ -114,13 +114,13 @@ Join us on Flipper and be part of the social media revolution!
 ├── ai
 ```
 
-## Deployed Smart Contracts on fuji
+## Deployed Smart Contracts on Filecoin EVM Testnet
 
-PostFactory contract address:    0x02ed3576A9570e865A8efa23c4eb39e2A71E1bDF
-https://testnet.snowtrace.io/address/0x02ed3576A9570e865A8efa23c4eb39e2A71E1bDF
+PostFactory contract address:  f2djorufq4t5nyjpbu55cl4ekmd7nlagq6xxj7oqi
+https://calibration.filutils.com/en/message/bafy2bzaced6dy6dmeoivzl3af3bbd2jxdhrfz3mxtneug3tt5p5eumdszzzxg
 
-Donation contract address:    0x2F533eB919E4B9013AacF11B9853F24484965dE1
-https://testnet.snowtrace.io/address/0x2F533eB919E4B9013AacF11B9853F24484965dE1
+Donation contract address:   f2svicegw7byznkirdnr4dt6ickdipz5svw42gckq 
+https://calibration.filutils.com/en/message/bafy2bzacecs7p5s3q77hkp2pdao6tapsa6qoytojqkapip4i37d3443atiz7u
 
 ## Deployed Smart Contracts on BSC Testnet
 
