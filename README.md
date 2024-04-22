@@ -114,14 +114,6 @@ Join us on Flipper and be part of the social media revolution!
 ├── ai
 ```
 
-## Deployed Smart Contracts on Filecoin Calibration EVM Testnet
-
-PostFactory contract address:  f2djorufq4t5nyjpbu55cl4ekmd7nlagq6xxj7oqi
-https://calibration.filutils.com/en/message/bafy2bzaced6dy6dmeoivzl3af3bbd2jxdhrfz3mxtneug3tt5p5eumdszzzxg
-
-Donation contract address:   f2svicegw7byznkirdnr4dt6ickdipz5svw42gckq 
-https://calibration.filutils.com/en/message/bafy2bzacecs7p5s3q77hkp2pdao6tapsa6qoytojqkapip4i37d3443atiz7u
-
 ## Deployed Smart Contracts on BSC Testnet
 
 PostFactory contract address:    0x21B0d2513193C75F437D73A2f5683ff4dAA25Ed1
