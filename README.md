@@ -114,13 +114,6 @@ Join us on Flipper and be part of the social media revolution!
 ├── ai
 ```
 
-## Deployed Smart Contracts on puppynet Testnet
-
-PostFactory contract address:    0xB433a6F3c690D17E78aa3dD87eC01cdc304278a9
-https://puppyscan.shib.io/address/0xB433a6F3c690D17E78aa3dD87eC01cdc304278a9
-
-Donation contract address:    0x4Cd7fDFf83DC1540696BdaF38840a93134336dF8
-https://puppyscan.shib.io/address/0x4Cd7fDFf83DC1540696BdaF38840a93134336dF8
 
 ## Running application
 
