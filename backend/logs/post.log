@@ -1,0 +1,377 @@
+[2023-06-07T01:42:53.812] [INFO] post - Post 4178f4b9-845e-41e4-8818-f2cbdbf9451d created successfully
+[2023-06-07T01:54:24.307] [ERROR] post - Problems on server: Error: 
+Invalid `prisma.post.create()` invocation in
+E:\pepeh\Documents\GitHub\chainlink-hackathon\backend\services\post.js:19:44
+
+  16 
+  17 //Create post on database
+  18 try {
+→ 19     const post = await prisma.post.create(
+Unique constraint failed on the fields: (`address`)
+[2023-06-07T01:56:26.649] [INFO] post - Post 0d8f057a-9230-4714-9a2e-7a2c2531f12e created successfully
+[2023-06-07T22:05:26.393] [ERROR] post - Problems on server: Error: 
+Invalid `prisma.post.findUnique()` invocation in
+/home/marcelo/dev/chainlink-hackathon/backend/services/post.js:54:38
+
+  51 let post;
+  52 
+  53 try {
+→ 54     post = await prisma.post.findUnique({
+           where: {
+             id: 'edea90b6-2743-4efe-ab55-dcacf2cce38e'
+           },
+           include: {
+         ?   author?: true,
+             posts: true
+             ~~~~~
+           }
+         })
+
+
+Unknown field `posts` for include statement on model Post. Available options are listed in green.
+
+[2023-06-07T22:05:26.411] [ERROR] post - Problems on server: Error: 
+Invalid `prisma.post.findUnique()` invocation in
+/home/marcelo/dev/chainlink-hackathon/backend/services/post.js:54:38
+
+  51 let post;
+  52 
+  53 try {
+→ 54     post = await prisma.post.findUnique({
+           where: {
+             id: 'edea90b6-2743-4efe-ab55-dcacf2cce38e'
+           },
+           include: {
+         ?   author?: true,
+             posts: true
+             ~~~~~
+           }
+         })
+
+
+Unknown field `posts` for include statement on model Post. Available options are listed in green.
+
+[2023-06-07T22:06:54.512] [INFO] post - Post d48ddb79-1035-4796-90d6-d148768b4ac3 created successfully
+[2023-06-08T18:51:05.424] [ERROR] post - Post undefined not found
+[2023-06-08T18:51:05.433] [ERROR] post - Post undefined not found
+[2023-06-08T19:02:30.058] [INFO] post - Post 8acf2525-a842-4a88-a151-f47d031c8264 created successfully
+[2023-06-08T19:58:39.219] [ERROR] post - Post undefined not found
+[2023-06-08T19:58:39.232] [ERROR] post - Post undefined not found
+[2023-06-09T14:37:24.403] [ERROR] post - Post undefined not found
+[2023-06-09T14:37:24.415] [ERROR] post - Post undefined not found
+[2023-06-09T15:02:01.617] [INFO] post - Post a12213d0-a97e-42db-998d-a89696483491 created successfully
+[2023-06-09T15:03:07.029] [ERROR] post - Error adding comment - Problems on server: Error: 
+Invalid `prisma.comment.create()` invocation in
+E:\pepeh\Documents\GitHub\chainlink-hackathon\backend\services\post.js:227:53
+
+  224 }
+  225 
+  226 try {
+→ 227     const newComment = await prisma.comment.create(
+Foreign key constraint failed on the field: `Comment_authorId_fkey (index)`
+[2023-06-09T19:38:05.398] [ERROR] post - Problems on server: Error: 
+Invalid `prisma.post.create()` invocation in
+/home/paulo/code/chainlink-hackathon/backend/services/post.js:39:44
+
+  36 
+  37 //Create post on database
+  38 try {
+→ 39     const post = await prisma.post.create({
+           data: {
+             id: '563d9e8c-c819-4300-a946-61a7d204090b',
+             description: 'helloo',
+             authorId: '958671b8-c3d3-4c06-9b36-b22f5768623d',
+             address: '0x000000000000000000',
+             isNFT: true
+             ~~~~~
+           }
+         })
+
+Unknown arg `isNFT` in data.isNFT for type PostUncheckedCreateInput. Did you mean `id`? Available args:
+type PostUncheckedCreateInput {
+  id: String
+  address: String
+  description: String
+  image?: String | Null
+  unlisted?: Boolean
+  createdAt?: DateTime
+  updatedAt?: DateTime
+  authorId: String
+  likes?: LikesUncheckedCreateNestedManyWithoutPostInput
+  comments?: CommentUncheckedCreateNestedManyWithoutPostInput
+}
+
+
+[2023-06-09T19:40:01.119] [INFO] post - Post 4d73a8c4-c343-4baf-b571-5a963bdce5ae created successfully
+[2023-06-09T22:19:16.222] [ERROR] post - Problems on server: TypeError: Cannot read properties of undefined (reading 'create')
+[2023-06-09T22:19:20.020] [ERROR] post - Problems on server: TypeError: Cannot read properties of undefined (reading 'create')
+[2023-06-09T22:25:14.018] [WARN] post - User 300f6b13-1bf9-46a1-81a2-0e151ea2c758 already exists, and tried to create another one
+[2023-06-09T22:26:13.858] [ERROR] post - Problems on server: Error: 
+Invalid `prisma.proposal.create()` invocation in
+/home/marcelo/dev/chainlink-hackathon/backend/services/dao.js:31:42
+
+  28 let post;
+  29 
+  30 try {
+→ 31     post = await prisma.proposal.create({
+           data: {
+             id: '3648dfbe-3555-46b5-9da1-4610873b099b',
+             address: '0xcb69bcf0477cd80000000000000000000',
+             authorId: 300f6b13-1bf9-46a1-81a2-0e151ea2c758,
+             ~~~~~~~~
+             title: 'Title #1 ',
+             ~~~~~
+             description: 'test',
+             ~~~~~~~~~~~
+             prLink: 'github.com',
+             options: {
+               create: [
+                 {
+                   title: 'Yes',
+                   votes: []
+                 },
+                 {
+                   title: 'No',
+                   votes: []
+                 },
+                 {
+                   title: 'Abstain',
+                   votes: []
+                 }
+               ]
+             },
+             open: true,
+             totalVotes: 0,
+             ~~~~~~~~~~
+             executed: false,
+             ~~~~~~~~
+         +   text: String,
+         +   status: String,
+         +   author: {
+         +     create?: UserCreateWithoutProposalsInput | UserUncheckedCreateWithoutProposalsInput,
+         +     connectOrCreate?: UserCreateOrConnectWithoutProposalsInput,
+         +     connect?: UserWhereUniqueInput
+         +   },
+         ?   createdAt?: DateTime,
+         ?   updatedAt?: DateTime,
+         ?   post?: {
+         ?     create?: PostCreateWithoutProposalsInput | PostUncheckedCreateWithoutProposalsInput,
+         ?     connectOrCreate?: PostCreateOrConnectWithoutProposalsInput,
+         ?     connect?: PostWhereUniqueInput
+         ?   }
+           }
+         })
+
+Unknown arg `authorId` in data.authorId for type ProposalCreateInput. Did you mean `author`?
+Unknown arg `title` in data.title for type ProposalCreateInput. Did you mean `id`?
+Unknown arg `description` in data.description for type ProposalCreateInput.
+Unknown arg `totalVotes` in data.totalVotes for type ProposalCreateInput.
+Unknown arg `executed` in data.executed for type ProposalCreateInput. Did you mean `select`?
+Argument text for data.text is missing.
+Argument status for data.status is missing.
+Argument author for data.author is missing.
+
+Note: Lines with + are required, lines with ? are optional.
+
+[2023-06-09T22:29:22.526] [ERROR] post - Problems on server: Error: 
+Invalid `prisma.proposal.create()` invocation in
+/home/marcelo/dev/chainlink-hackathon/backend/services/dao.js:31:42
+
+  28 let post;
+  29 
+  30 try {
+→ 31     post = await prisma.proposal.create({
+           data: {
+             id: '2527f510-ce8c-49d9-a5c6-25621077ef8a',
+             address: '0x19483807825e8f00000000000000000000',
+             authorId: 300f6b13-1bf9-46a1-81a2-0e151ea2c758,
+             ~~~~~~~~
+             title: 'Title #1 ',
+             ~~~~~
+             description: 'test',
+             ~~~~~~~~~~~
+             prLink: 'github.com',
+             options: {
+               create: [
+                 {
+                   title: 'Yes',
+                   votes: []
+                 },
+                 {
+                   title: 'No',
+                   votes: []
+                 },
+                 {
+                   title: 'Abstain',
+                   votes: []
+                 }
+               ]
+             },
+             open: true,
+             totalVotes: 0,
+             ~~~~~~~~~~
+             executed: false,
+             ~~~~~~~~
+         +   text: String,
+         +   status: String,
+         +   author: {
+         +     create?: UserCreateWithoutProposalsInput | UserUncheckedCreateWithoutProposalsInput,
+         +     connectOrCreate?: UserCreateOrConnectWithoutProposalsInput,
+         +     connect?: UserWhereUniqueInput
+         +   },
+         ?   createdAt?: DateTime,
+         ?   updatedAt?: DateTime,
+         ?   post?: {
+         ?     create?: PostCreateWithoutProposalsInput | PostUncheckedCreateWithoutProposalsInput,
+         ?     connectOrCreate?: PostCreateOrConnectWithoutProposalsInput,
+         ?     connect?: PostWhereUniqueInput
+         ?   }
+           }
+         })
+
+Unknown arg `authorId` in data.authorId for type ProposalCreateInput. Did you mean `author`?
+Unknown arg `title` in data.title for type ProposalCreateInput. Did you mean `id`?
+Unknown arg `description` in data.description for type ProposalCreateInput.
+Unknown arg `totalVotes` in data.totalVotes for type ProposalCreateInput.
+Unknown arg `executed` in data.executed for type ProposalCreateInput. Did you mean `select`?
+Argument text for data.text is missing.
+Argument status for data.status is missing.
+Argument author for data.author is missing.
+
+Note: Lines with + are required, lines with ? are optional.
+
+[2023-06-09T22:29:25.328] [ERROR] post - Problems on server: Error: 
+Invalid `prisma.proposal.create()` invocation in
+/home/marcelo/dev/chainlink-hackathon/backend/services/dao.js:31:42
+
+  28 let post;
+  29 
+  30 try {
+→ 31     post = await prisma.proposal.create({
+           data: {
+             id: '77c27e66-7ba7-4e67-a66b-4c36ce3ffef7',
+             address: '0x10be55f7b9568200000000000000000000',
+             authorId: 300f6b13-1bf9-46a1-81a2-0e151ea2c758,
+             ~~~~~~~~
+             title: 'Title #1 ',
+             ~~~~~
+             description: 'test',
+             ~~~~~~~~~~~
+             prLink: 'github.com',
+             options: {
+               create: [
+                 {
+                   title: 'Yes',
+                   votes: []
+                 },
+                 {
+                   title: 'No',
+                   votes: []
+                 },
+                 {
+                   title: 'Abstain',
+                   votes: []
+                 }
+               ]
+             },
+             open: true,
+             totalVotes: 0,
+             ~~~~~~~~~~
+             executed: false,
+             ~~~~~~~~
+         +   text: String,
+         +   status: String,
+         +   author: {
+         +     create?: UserCreateWithoutProposalsInput | UserUncheckedCreateWithoutProposalsInput,
+         +     connectOrCreate?: UserCreateOrConnectWithoutProposalsInput,
+         +     connect?: UserWhereUniqueInput
+         +   },
+         ?   createdAt?: DateTime,
+         ?   updatedAt?: DateTime,
+         ?   post?: {
+         ?     create?: PostCreateWithoutProposalsInput | PostUncheckedCreateWithoutProposalsInput,
+         ?     connectOrCreate?: PostCreateOrConnectWithoutProposalsInput,
+         ?     connect?: PostWhereUniqueInput
+         ?   }
+           }
+         })
+
+Unknown arg `authorId` in data.authorId for type ProposalCreateInput. Did you mean `author`?
+Unknown arg `title` in data.title for type ProposalCreateInput. Did you mean `id`?
+Unknown arg `description` in data.description for type ProposalCreateInput.
+Unknown arg `totalVotes` in data.totalVotes for type ProposalCreateInput.
+Unknown arg `executed` in data.executed for type ProposalCreateInput. Did you mean `select`?
+Argument text for data.text is missing.
+Argument status for data.status is missing.
+Argument author for data.author is missing.
+
+Note: Lines with + are required, lines with ? are optional.
+
+[2023-06-09T22:33:12.261] [INFO] post - Post 68633cc5-3af2-4835-8bb7-84d150de84b2 created successfully
+[2023-06-10T01:30:31.538] [INFO] post - Post 53f95dc0-7532-40e3-9833-4ff16f7c4892 created successfully
+[2023-06-10T01:31:46.976] [INFO] post - Post b51a5000-01c5-4db0-8aaf-82522048310d created successfully
+[2023-06-10T01:32:12.128] [INFO] post - Post f5b5d5bd-fdef-400c-b60c-983524d2ef61 created successfully
+[2023-06-10T02:25:38.716] [ERROR] post - Post undefined not found
+[2023-06-10T02:25:38.860] [ERROR] post - Post undefined not found
+[2023-06-10T02:25:49.268] [ERROR] post - Post undefined not found
+[2023-06-10T02:25:49.413] [ERROR] post - Post undefined not found
+[2023-06-10T02:27:49.808] [ERROR] post - Post undefined not found
+[2023-06-10T02:27:49.951] [ERROR] post - Post undefined not found
+[2023-06-10T02:28:06.400] [ERROR] post - Post undefined not found
+[2023-06-10T02:28:06.540] [ERROR] post - Post undefined not found
+[2023-06-10T02:55:25.930] [INFO] post - Post 0fd31773-11c4-476b-a71e-bb69fcd3914a created successfully
+[2023-06-11T18:32:13.176] [ERROR] post - Problems on server: Error: 
+Invalid `prisma.post.findMany()` invocation in
+/home/marcelo/dev/chainlink-hackathon/backend/services/post.js:62:43
+
+  59 let qntDislikes = 0
+  60 
+  61 try { 
+→ 62     let posts = await prisma.post.findMany(
+Can't reach database server at `flipper.cmystrisvb9f.us-east-1.rds.amazonaws.com`:`5432`
+
+Please make sure your database server is running at `flipper.cmystrisvb9f.us-east-1.rds.amazonaws.com`:`5432`.
+[2023-06-11T18:32:13.230] [ERROR] post - Problems on server: Error: 
+Invalid `prisma.post.findMany()` invocation in
+/home/marcelo/dev/chainlink-hackathon/backend/services/post.js:62:43
+
+  59 let qntDislikes = 0
+  60 
+  61 try { 
+→ 62     let posts = await prisma.post.findMany(
+Can't reach database server at `flipper.cmystrisvb9f.us-east-1.rds.amazonaws.com`:`5432`
+
+Please make sure your database server is running at `flipper.cmystrisvb9f.us-east-1.rds.amazonaws.com`:`5432`.
+[2023-06-12T00:32:25.979] [ERROR] post - Problems on server: Error: 
+Invalid `prisma.post.findMany()` invocation in
+/home/marcelo/dev/chainlink-hackathon/backend/services/post.js:62:43
+
+  59 let qntDislikes = 0
+  60 
+  61 try { 
+→ 62     let posts = await prisma.post.findMany(
+Can't reach database server at `flipper.cmystrisvb9f.us-east-1.rds.amazonaws.com`:`5432`
+
+Please make sure your database server is running at `flipper.cmystrisvb9f.us-east-1.rds.amazonaws.com`:`5432`.
+[2023-06-12T00:32:39.078] [ERROR] post - Problems on server: Error: 
+Invalid `prisma.post.findMany()` invocation in
+/home/marcelo/dev/chainlink-hackathon/backend/services/post.js:62:43
+
+  59 let qntDislikes = 0
+  60 
+  61 try { 
+→ 62     let posts = await prisma.post.findMany(
+Can't reach database server at `flipper.cmystrisvb9f.us-east-1.rds.amazonaws.com`:`5432`
+
+Please make sure your database server is running at `flipper.cmystrisvb9f.us-east-1.rds.amazonaws.com`:`5432`.
+[2023-06-12T00:32:41.415] [ERROR] post - Problems on server: Error: 
+Invalid `prisma.post.findMany()` invocation in
+/home/marcelo/dev/chainlink-hackathon/backend/services/post.js:62:43
+
+  59 let qntDislikes = 0
+  60 
+  61 try { 
+→ 62     let posts = await prisma.post.findMany(
+Can't reach database server at `flipper.cmystrisvb9f.us-east-1.rds.amazonaws.com`:`5432`
+
+Please make sure your database server is running at `flipper.cmystrisvb9f.us-east-1.rds.amazonaws.com`:`5432`.

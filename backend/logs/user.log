@@ -1,0 +1,215 @@
+[2023-06-06T11:48:47.000] [ERROR] user - Problems on server: Error: 
+Invalid `prisma.user.create()` invocation in
+C:\Users\pepeh\OneDrive\Documentos\GitHub\chainlink-hackathon\backend\services\user.js:34:44
+
+  31 }
+  32 
+  33 try {
+→ 34     const user = await prisma.user.create({
+           data: {
+             id: '22f2a69c-2d89-4a73-87c5-56a703dfad4e',
+             email: 'pepehaggeb@gmail.com',
+             password: '$2b$08$zuSdl8LGIcjoHgpbyvQzH.hk0ffN5C2wgCNGeFkGvOZxCezXeK60S',
+             ~~~~~~~~
+             name: 'Pedro',
+             address: '0x71ce1e91bD8c4673e09EAb1F7a4D79B646d66874'
+           }
+         })
+
+Unknown arg `password` in data.password for type UserCreateInput. Available args:
+
+type UserCreateInput {
+  id: String
+  address: String
+  email: String
+  name?: String | Null
+  createdAt?: DateTime
+  updatedAt?: DateTime
+  posts?: PostCreateNestedManyWithoutAuthorInput
+}
+
+
+[2023-06-06T11:50:07.877] [INFO] user - User c4e9462a-6604-4a7e-ac80-8843838a61a6 created successfully
+[2023-06-06T14:05:00.530] [INFO] user - User c4e9462a-6604-4a7e-ac80-8843838a61a6 authenticated successfully
+[2023-06-06T14:06:39.308] [INFO] user - User c4e9462a-6604-4a7e-ac80-8843838a61a6 authenticated successfully
+[2023-06-06T14:06:52.053] [WARN] user - Account c4e9462a-6604-4a7e-ac80-8843838a61a6 had problems to authenticate with wrong password
+[2023-06-06T14:10:36.463] [WARN] user - Account c4e9462a-6604-4a7e-ac80-8843838a61a6 had problems to authenticate with wrong password
+[2023-06-06T14:10:41.024] [WARN] user - Account c4e9462a-6604-4a7e-ac80-8843838a61a6 had problems to authenticate with wrong password
+[2023-06-06T14:10:45.125] [INFO] user - User c4e9462a-6604-4a7e-ac80-8843838a61a6 authenticated successfully
+[2023-06-06T14:11:54.374] [WARN] user - Account c4e9462a-6604-4a7e-ac80-8843838a61a6 had problems to authenticate with wrong password
+[2023-06-06T14:11:57.410] [INFO] user - User c4e9462a-6604-4a7e-ac80-8843838a61a6 authenticated successfully
+[2023-06-06T14:12:32.069] [WARN] user - Account c4e9462a-6604-4a7e-ac80-8843838a61a6 had problems to authenticate with wrong password
+[2023-06-06T14:12:35.761] [INFO] user - User c4e9462a-6604-4a7e-ac80-8843838a61a6 authenticated successfully
+[2023-06-06T14:12:48.690] [INFO] user - User c4e9462a-6604-4a7e-ac80-8843838a61a6 authenticated successfully
+[2023-06-06T14:15:06.978] [INFO] user - User 359aacdc-0b21-4944-93ab-4ffbab9af12c created successfully
+[2023-06-06T14:17:21.360] [WARN] user - Login with email 0x71ce1e91bd8c4673e09eab1f7a4d79b646d66874 tried to authnticate
+[2023-06-06T14:17:42.639] [INFO] user - User 359aacdc-0b21-4944-93ab-4ffbab9af12c authenticated successfully
+[2023-06-06T14:19:16.283] [INFO] user - User 359aacdc-0b21-4944-93ab-4ffbab9af12c authenticated successfully
+[2023-06-06T14:24:25.692] [INFO] user - User 6d5548f7-e616-4540-84cd-89c4dc545486 created successfully
+[2023-06-06T14:24:52.813] [INFO] user - User 6d5548f7-e616-4540-84cd-89c4dc545486 authenticated successfully
+[2023-06-06T14:26:40.970] [INFO] user - User 6d5548f7-e616-4540-84cd-89c4dc545486 authenticated successfully
+[2023-06-06T14:44:03.080] [INFO] user - User 5e9e8b51-a1da-42cf-9ca8-828d851a6053 created successfully
+[2023-06-06T14:47:00.796] [INFO] user - User c60622b8-50ef-4b7a-a4c4-28d577859933 created successfully
+[2023-06-06T14:47:00.850] [INFO] user - User c60622b8-50ef-4b7a-a4c4-28d577859933 authenticated successfully
+[2023-06-06T14:49:25.956] [INFO] user - User c60622b8-50ef-4b7a-a4c4-28d577859933 authenticated successfully
+[2023-06-06T14:50:32.192] [INFO] user - User 31479c93-e2f1-41f8-9f0f-b30c33a704d2 created successfully
+[2023-06-06T14:50:32.237] [INFO] user - User 31479c93-e2f1-41f8-9f0f-b30c33a704d2 authenticated successfully
+[2023-06-06T14:51:13.563] [INFO] user - User 855dac3e-e1f5-441b-bdb2-a8b359b119a5 created successfully
+[2023-06-06T14:51:13.610] [INFO] user - User 855dac3e-e1f5-441b-bdb2-a8b359b119a5 authenticated successfully
+[2023-06-06T14:57:58.612] [INFO] user - User 3c9b2704-16f3-436d-852d-b8e45c25baa3 created successfully
+[2023-06-06T14:57:58.670] [INFO] user - User 3c9b2704-16f3-436d-852d-b8e45c25baa3 authenticated successfully
+[2023-06-06T14:58:07.284] [INFO] user - User 3c9b2704-16f3-436d-852d-b8e45c25baa3 authenticated successfully
+[2023-06-06T15:15:38.844] [INFO] user - User 42aac730-fe62-432a-a7fe-86c3a1be56b2 created successfully
+[2023-06-06T15:15:38.931] [INFO] user - User 42aac730-fe62-432a-a7fe-86c3a1be56b2 authenticated successfully
+[2023-06-06T15:15:50.073] [INFO] user - User 42aac730-fe62-432a-a7fe-86c3a1be56b2 authenticated successfully
+[2023-06-06T15:20:18.987] [INFO] user - User 42aac730-fe62-432a-a7fe-86c3a1be56b2 authenticated successfully
+[2023-06-07T01:01:29.403] [WARN] user - User 42aac730-fe62-432a-a7fe-86c3a1be56b2 already exists, and tried to create another one
+[2023-06-07T01:01:36.779] [INFO] user - User 7bfe2b97-93bd-4cd2-99ec-90301082d008 created successfully
+[2023-06-07T01:01:36.842] [INFO] user - User 7bfe2b97-93bd-4cd2-99ec-90301082d008 authenticated successfully
+[2023-06-07T01:01:46.702] [INFO] user - User 7bfe2b97-93bd-4cd2-99ec-90301082d008 authenticated successfully
+[2023-06-07T22:05:17.731] [INFO] user - User 7cdb61be-defa-4029-96c0-add214f1e46a created successfully
+[2023-06-07T22:05:17.764] [INFO] user - User 7cdb61be-defa-4029-96c0-add214f1e46a authenticated successfully
+[2023-06-08T13:32:04.002] [INFO] user - User 7cdb61be-defa-4029-96c0-add214f1e46a authenticated successfully
+[2023-06-08T18:50:59.486] [INFO] user - User 7bfe2b97-93bd-4cd2-99ec-90301082d008 authenticated successfully
+[2023-06-08T19:01:44.843] [ERROR] user - Problems on server: Error: 
+Invalid `prisma.user.create()` invocation in
+E:\pepeh\Documents\GitHub\chainlink-hackathon\backend\services\user.js:45:44
+
+  42 }
+  43 
+  44 try {
+→ 45     const user = await prisma.user.create({
+           data: {
+             id: '1703d8fd-ec43-4314-9354-541512956426',
+             email: 'pepehaggeb@gmail.com',
+             password: '$2b$08$fXexoArBS28CWhEQF0S4t.SpM.5/Fs/ywfxEfeK2L5QXeI5g1UXCS',
+             name: 'Pedro Hagge Baptista',
+             address: '0xdf013448797e4cb858e1ede170115a864a07efaf',
+         +   username: String,
+         ?   createdAt?: DateTime,
+         ?   updatedAt?: DateTime,
+         ?   posts?: {
+         ?     create?: PostCreateWithoutAuthorInput | PostCreateWithoutAuthorInput | PostUncheckedCreateWithoutAuthorInput | PostUncheckedCreateWithoutAuthorInput,
+         ?     connectOrCreate?: PostCreateOrConnectWithoutAuthorInput | PostCreateOrConnectWithoutAuthorInput,
+         ?     connect?: PostWhereUniqueInput | PostWhereUniqueInput
+         ?   },
+         ?   likes?: {
+         ?     create?: LikesCreateWithoutAuthorInput | LikesCreateWithoutAuthorInput | LikesUncheckedCreateWithoutAuthorInput | LikesUncheckedCreateWithoutAuthorInput,
+         ?     connectOrCreate?: LikesCreateOrConnectWithoutAuthorInput | LikesCreateOrConnectWithoutAuthorInput,
+         ?     connect?: LikesWhereUniqueInput | LikesWhereUniqueInput
+         ?   },
+         ?   comments?: {
+         ?     create?: CommentCreateWithoutAuthorInput | CommentCreateWithoutAuthorInput | CommentUncheckedCreateWithoutAuthorInput | CommentUncheckedCreateWithoutAuthorInput,
+         ?     connectOrCreate?: CommentCreateOrConnectWithoutAuthorInput | CommentCreateOrConnectWithoutAuthorInput,
+         ?     connect?: CommentWhereUniqueInput | CommentWhereUniqueInput
+         ?   }
+           }
+         })
+
+Argument username for data.username is missing.
+
+Note: Lines with + are required, lines with ? are optional.
+
+[2023-06-08T19:02:06.613] [INFO] user - User a2ace557-13e2-4978-b7ba-569607032af7 created successfully
+[2023-06-08T19:02:06.663] [INFO] user - User a2ace557-13e2-4978-b7ba-569607032af7 authenticated successfully
+[2023-06-08T19:58:28.288] [WARN] user - Account a2ace557-13e2-4978-b7ba-569607032af7 had problems to authenticate with wrong password
+[2023-06-08T19:58:31.341] [INFO] user - User a2ace557-13e2-4978-b7ba-569607032af7 authenticated successfully
+[2023-06-08T20:00:25.635] [WARN] user - Account a2ace557-13e2-4978-b7ba-569607032af7 had problems to authenticate with wrong password
+[2023-06-08T20:00:28.588] [INFO] user - User a2ace557-13e2-4978-b7ba-569607032af7 authenticated successfully
+[2023-06-09T14:31:44.524] [INFO] user - User a2ace557-13e2-4978-b7ba-569607032af7 authenticated successfully
+[2023-06-09T14:55:41.976] [WARN] user - User a2ace557-13e2-4978-b7ba-569607032af7 not found on getUser route, and need to be checked
+[2023-06-09T14:55:42.128] [WARN] user - User a2ace557-13e2-4978-b7ba-569607032af7 not found on getUser route, and need to be checked
+[2023-06-09T14:55:42.271] [WARN] user - User a2ace557-13e2-4978-b7ba-569607032af7 not found on getUser route, and need to be checked
+[2023-06-09T14:55:42.413] [WARN] user - User a2ace557-13e2-4978-b7ba-569607032af7 not found on getUser route, and need to be checked
+[2023-06-09T14:55:42.557] [WARN] user - User a2ace557-13e2-4978-b7ba-569607032af7 not found on getUser route, and need to be checked
+[2023-06-09T14:55:42.701] [WARN] user - User a2ace557-13e2-4978-b7ba-569607032af7 not found on getUser route, and need to be checked
+[2023-06-09T15:01:44.438] [INFO] user - User 66c36123-0fd7-4550-8300-65d0b466c081 created successfully
+[2023-06-09T15:01:44.753] [INFO] user - User 66c36123-0fd7-4550-8300-65d0b466c081 authenticated successfully
+[2023-06-09T19:09:06.280] [INFO] user - User 300f6b13-1bf9-46a1-81a2-0e151ea2c758 created successfully
+[2023-06-09T19:09:06.465] [INFO] user - User 300f6b13-1bf9-46a1-81a2-0e151ea2c758 authenticated successfully
+[2023-06-09T19:11:02.785] [INFO] user - User 300f6b13-1bf9-46a1-81a2-0e151ea2c758 updated successfully
+[2023-06-09T19:51:09.695] [WARN] user - User 0x40a32466d722371d48f9008f301dc9ee92dbf80f not found on getUser route, and need to be checked
+[2023-06-09T19:51:09.841] [WARN] user - User 0x40a32466d722371d48f9008f301dc9ee92dbf80f not found on getUser route, and need to be checked
+[2023-06-09T19:51:23.722] [WARN] user - User 0x40a32466d722371d48f9008f301dc9ee92dbf80f not found on getUser route, and need to be checked
+[2023-06-09T19:51:23.890] [WARN] user - User 0x40a32466d722371d48f9008f301dc9ee92dbf80f not found on getUser route, and need to be checked
+[2023-06-09T20:37:20.376] [WARN] user - Account 300f6b13-1bf9-46a1-81a2-0e151ea2c758 had problems to authenticate with wrong password
+[2023-06-09T20:37:23.076] [INFO] user - User 300f6b13-1bf9-46a1-81a2-0e151ea2c758 authenticated successfully
+[2023-06-10T00:20:32.377] [INFO] user - User 3f840e63-3c87-4ce1-93bd-1ba653e6b676 authenticated successfully
+[2023-06-10T00:25:36.698] [INFO] user - User 3f840e63-3c87-4ce1-93bd-1ba653e6b676 authenticated successfully
+[2023-06-10T02:13:17.691] [INFO] user - User d99729e7-1f5c-4804-af31-9fb289f57836 authenticated successfully
+[2023-06-10T16:23:07.529] [INFO] user - User d99729e7-1f5c-4804-af31-9fb289f57836 authenticated successfully
+[2023-06-10T16:33:48.694] [INFO] user - User d99729e7-1f5c-4804-af31-9fb289f57836 authenticated successfully
+[2023-06-10T17:31:58.758] [ERROR] user - Problems on server: Error: 
+Invalid `prisma.follow.create()` invocation in
+E:\pepeh\Documents\GitHub\chainlink-hackathon\backend\services\user.js:323:48
+
+  320 }
+  321 
+  322 try {
+→ 323     const follow = await prisma.follow.create({
+            data: {
+              followerId: 'd99729e7-1f5c-4804-af31-9fb289f57836',
+              followingId: '3f840e63-3c87-4ce1-93bd-1ba653e6b676',
+          +   id: String,
+          ?   createdAt?: DateTime,
+          ?   updatedAt?: DateTime
+            }
+          })
+
+Argument id for data.id is missing.
+
+Note: Lines with + are required, lines with ? are optional.
+
+[2023-06-10T17:32:43.527] [INFO] user - User d99729e7-1f5c-4804-af31-9fb289f57836 followed user 3f840e63-3c87-4ce1-93bd-1ba653e6b676 successfully
+[2023-06-10T17:35:48.466] [INFO] user - User d99729e7-1f5c-4804-af31-9fb289f57836 authenticated successfully
+[2023-06-10T17:43:44.679] [ERROR] user - Problems on server: Error: 
+Invalid `prisma.follow.delete()` invocation in
+E:\pepeh\Documents\GitHub\chainlink-hackathon\backend\services\user.js:375:54
+
+  372 }
+  373 
+  374 try {
+→ 375     const follow = await prisma.follow.delete({
+            where: {
+              followerId: 'd99729e7-1f5c-4804-af31-9fb289f57836',
+              ~~~~~~~~~~
+              followingId: '3f840e63-3c87-4ce1-93bd-1ba653e6b676'
+              ~~~~~~~~~~~
+            }
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+          })
+
+Argument where of type FollowWhereUniqueInput needs exactly one argument, but you provided followerId and followingId. Please choose one. Available args: 
+type FollowWhereUniqueInput {
+  id?: String
+}
+Unknown arg `followerId` in where.followerId for type FollowWhereUniqueInput. Available args:
+
+type FollowWhereUniqueInput {
+  id?: String
+}
+Unknown arg `followingId` in where.followingId for type FollowWhereUniqueInput. Available args:
+
+type FollowWhereUniqueInput {
+  id?: String
+}
+
+
+[2023-06-10T17:44:52.958] [INFO] user - User d99729e7-1f5c-4804-af31-9fb289f57836 unfollowed user 3f840e63-3c87-4ce1-93bd-1ba653e6b676 successfully
+[2023-06-10T17:45:19.358] [INFO] user - User d99729e7-1f5c-4804-af31-9fb289f57836 followed user 3f840e63-3c87-4ce1-93bd-1ba653e6b676 successfully
+[2023-06-10T17:45:37.587] [INFO] user - User d99729e7-1f5c-4804-af31-9fb289f57836 unfollowed user 3f840e63-3c87-4ce1-93bd-1ba653e6b676 successfully
+[2023-06-10T17:45:40.949] [INFO] user - User d99729e7-1f5c-4804-af31-9fb289f57836 followed user 3f840e63-3c87-4ce1-93bd-1ba653e6b676 successfully
+[2023-06-10T17:49:02.126] [INFO] user - User d99729e7-1f5c-4804-af31-9fb289f57836 unfollowed user 3f840e63-3c87-4ce1-93bd-1ba653e6b676 successfully
+[2023-06-10T17:49:30.892] [INFO] user - User d99729e7-1f5c-4804-af31-9fb289f57836 followed user 3f840e63-3c87-4ce1-93bd-1ba653e6b676 successfully
+[2023-06-10T17:50:30.497] [INFO] user - User d99729e7-1f5c-4804-af31-9fb289f57836 unfollowed user 3f840e63-3c87-4ce1-93bd-1ba653e6b676 successfully
+[2023-06-10T17:50:34.257] [INFO] user - User d99729e7-1f5c-4804-af31-9fb289f57836 followed user 3f840e63-3c87-4ce1-93bd-1ba653e6b676 successfully
+[2023-06-10T17:51:28.821] [INFO] user - User d99729e7-1f5c-4804-af31-9fb289f57836 unfollowed user 3f840e63-3c87-4ce1-93bd-1ba653e6b676 successfully
+[2023-06-10T17:51:51.443] [INFO] user - User d99729e7-1f5c-4804-af31-9fb289f57836 followed user 3f840e63-3c87-4ce1-93bd-1ba653e6b676 successfully
+[2023-06-10T17:51:56.080] [INFO] user - User d99729e7-1f5c-4804-af31-9fb289f57836 unfollowed user 3f840e63-3c87-4ce1-93bd-1ba653e6b676 successfully
+[2023-06-10T17:52:01.419] [INFO] user - User d99729e7-1f5c-4804-af31-9fb289f57836 followed user 3f840e63-3c87-4ce1-93bd-1ba653e6b676 successfully
+[2023-06-11T18:25:08.884] [INFO] user - User 3f840e63-3c87-4ce1-93bd-1ba653e6b676 authenticated successfully
+[2023-06-11T18:32:21.925] [INFO] user - User 3f840e63-3c87-4ce1-93bd-1ba653e6b676 authenticated successfully
+[2023-06-11T19:12:56.830] [INFO] user - User 3f840e63-3c87-4ce1-93bd-1ba653e6b676 authenticated successfully
+[2023-06-11T20:13:09.143] [INFO] user - User 3f840e63-3c87-4ce1-93bd-1ba653e6b676 authenticated successfully
+[2023-06-11T23:58:01.145] [INFO] user - User 3f840e63-3c87-4ce1-93bd-1ba653e6b676 authenticated successfully
+[2023-06-12T00:32:54.968] [INFO] user - User 3f840e63-3c87-4ce1-93bd-1ba653e6b676 authenticated successfully
